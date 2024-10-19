@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoCurrency Exchange</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CryptoCurrency Exchange</h1>
+        <div class="crypto-selection">
+            <label for="crypto">Choose Cryptocurrency:</label>
+            <select id="crypto"></select>
+        </div>
+
+        <div class="action-selection">
+            <label for="action">Action:</label>
+            <button id="buyBtn" onclick="handleAction('buy')">Buy</button>
+            <button id="sellBtn" onclick="handleAction('sell')">Sell</button>
+        </div>
+
+        <div id="suggestion" class="suggestion-box"></div>
+
+        <div id="history" class="history-box">
+            <h2>Historical Data</h2>
+            <p id="peak">Peak Points: </p>
+            <p id="drop">Drop Points: </p>
+            <p id="stable">Stable Points: </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
